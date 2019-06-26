@@ -1,0 +1,16 @@
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\View.exe.config
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\View.exe
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\View.pdb
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\ClassLibrary1.dll
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\ContaPagarRepository.dll
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\ClassLibrary1.pdb
+C:\Users\Alunos\source\repos\ClassLibrary1\View\bin\Debug\ContaPagarRepository.pdb
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.csprojAssemblyReference.cache
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.FormContasPagar.resources
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.PaginaInicial.resources
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.exe
+C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.pdb

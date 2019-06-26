@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "ClassLibrary1\Model.csproj", "{A8677C5C-BD2B-4FB9-B8D7-4766D88A18A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "ContaPagarRepository\Repository.csproj", "{ACDB6E4D-88C6-4427-808F-391DE5E07FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{EE8F30DA-24A0-418B-AEBD-3875F6B207CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8677C5C-BD2B-4FB9-B8D7-4766D88A18A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8677C5C-BD2B-4FB9-B8D7-4766D88A18A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8677C5C-BD2B-4FB9-B8D7-4766D88A18A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8677C5C-BD2B-4FB9-B8D7-4766D88A18A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDB6E4D-88C6-4427-808F-391DE5E07FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDB6E4D-88C6-4427-808F-391DE5E07FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDB6E4D-88C6-4427-808F-391DE5E07FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDB6E4D-88C6-4427-808F-391DE5E07FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8F30DA-24A0-418B-AEBD-3875F6B207CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8F30DA-24A0-418B-AEBD-3875F6B207CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8F30DA-24A0-418B-AEBD-3875F6B207CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8F30DA-24A0-418B-AEBD-3875F6B207CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1085B2DA-60F5-4D2E-B3DC-83B167F15DDB}
+	EndGlobalSection
+EndGlobal

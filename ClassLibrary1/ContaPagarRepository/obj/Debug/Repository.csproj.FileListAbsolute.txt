@@ -1,0 +1,9 @@
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\bin\Debug\ContaPagarRepository.dll
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\bin\Debug\ContaPagarRepository.pdb
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\bin\Debug\ClassLibrary1.dll
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\bin\Debug\ClassLibrary1.pdb
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\obj\Debug\ContaPagarRepository.dll
+C:\Users\Alunos\source\repos\ClassLibrary1\ContaPagarRepository\obj\Debug\ContaPagarRepository.pdb
