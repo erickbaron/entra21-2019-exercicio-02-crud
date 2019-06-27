@@ -41,6 +41,13 @@
             this.lblId = new System.Windows.Forms.Label();
             this.dgvContasPagar = new System.Windows.Forms.DataGridView();
             this.dtpDataVencimento = new System.Windows.Forms.DateTimePicker();
+            this.txtBusca = new System.Windows.Forms.TextBox();
+            this.lblBusca = new System.Windows.Forms.Label();
+            this.ColumnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDataVencimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContasPagar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,6 +100,7 @@
             this.btnApagar.TabIndex = 5;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnEditar
             // 
@@ -102,6 +110,7 @@
             this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // lblNome
             // 
@@ -146,14 +155,25 @@
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(0, 13);
             this.lblId.TabIndex = 11;
+            this.lblId.Visible = false;
             // 
             // dgvContasPagar
             // 
+            this.dgvContasPagar.AllowUserToAddRows = false;
+            this.dgvContasPagar.AllowUserToDeleteRows = false;
             this.dgvContasPagar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContasPagar.Location = new System.Drawing.Point(120, 32);
+            this.dgvContasPagar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnCodigo,
+            this.ColumnNome,
+            this.ColumnValor,
+            this.ColumnTipo,
+            this.ColumnDataVencimento});
+            this.dgvContasPagar.Location = new System.Drawing.Point(120, 58);
             this.dgvContasPagar.Name = "dgvContasPagar";
-            this.dgvContasPagar.Size = new System.Drawing.Size(342, 263);
+            this.dgvContasPagar.ReadOnly = true;
+            this.dgvContasPagar.Size = new System.Drawing.Size(342, 237);
             this.dgvContasPagar.TabIndex = 12;
+            this.dgvContasPagar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContasPagar_CellDoubleClick);
             // 
             // dtpDataVencimento
             // 
@@ -162,12 +182,63 @@
             this.dtpDataVencimento.Name = "dtpDataVencimento";
             this.dtpDataVencimento.Size = new System.Drawing.Size(101, 20);
             this.dtpDataVencimento.TabIndex = 13;
+            this.dtpDataVencimento.Value = new System.DateTime(2019, 6, 27, 0, 0, 0, 0);
+            // 
+            // txtBusca
+            // 
+            this.txtBusca.Location = new System.Drawing.Point(120, 32);
+            this.txtBusca.Name = "txtBusca";
+            this.txtBusca.Size = new System.Drawing.Size(342, 20);
+            this.txtBusca.TabIndex = 14;
+            // 
+            // lblBusca
+            // 
+            this.lblBusca.AutoSize = true;
+            this.lblBusca.Location = new System.Drawing.Point(117, 16);
+            this.lblBusca.Name = "lblBusca";
+            this.lblBusca.Size = new System.Drawing.Size(37, 13);
+            this.lblBusca.TabIndex = 15;
+            this.lblBusca.Text = "Busca";
+            // 
+            // ColumnCodigo
+            // 
+            this.ColumnCodigo.HeaderText = "Cód.";
+            this.ColumnCodigo.Name = "ColumnCodigo";
+            this.ColumnCodigo.ReadOnly = true;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            // 
+            // ColumnValor
+            // 
+            this.ColumnValor.HeaderText = "Valor";
+            this.ColumnValor.Name = "ColumnValor";
+            this.ColumnValor.ReadOnly = true;
+            this.ColumnValor.Width = 65;
+            // 
+            // ColumnTipo
+            // 
+            this.ColumnTipo.HeaderText = "Tipo";
+            this.ColumnTipo.Name = "ColumnTipo";
+            this.ColumnTipo.ReadOnly = true;
+            this.ColumnTipo.Width = 65;
+            // 
+            // ColumnDataVencimento
+            // 
+            this.ColumnDataVencimento.HeaderText = "Data de Vencimento";
+            this.ColumnDataVencimento.Name = "ColumnDataVencimento";
+            this.ColumnDataVencimento.ReadOnly = true;
             // 
             // FormContasPagar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblBusca);
+            this.Controls.Add(this.txtBusca);
             this.Controls.Add(this.dtpDataVencimento);
             this.Controls.Add(this.dgvContasPagar);
             this.Controls.Add(this.lblId);
@@ -183,6 +254,7 @@
             this.Controls.Add(this.txtNome);
             this.Name = "FormContasPagar";
             this.Text = "ContasPagar";
+            this.Load += new System.EventHandler(this.FormContasPagar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvContasPagar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,5 +276,12 @@
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.DataGridView dgvContasPagar;
         private System.Windows.Forms.DateTimePicker dtpDataVencimento;
+        private System.Windows.Forms.TextBox txtBusca;
+        private System.Windows.Forms.Label lblBusca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDataVencimento;
     }
 }

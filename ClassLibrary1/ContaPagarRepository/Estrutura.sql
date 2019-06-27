@@ -7,3 +7,5 @@ CREATE TABLE contas_pagar(
 	data_vencimento DATETIME2
 
 );
+
+SELECT * FROM contas_pagar;
