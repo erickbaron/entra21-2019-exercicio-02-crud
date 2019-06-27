@@ -22,5 +22,11 @@ namespace View
             FormContasPagar form = new FormContasPagar();
             form.Visible = true;
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            Clientes form = new Clientes();
+            form.Visible = true;
+        }
     }
 }

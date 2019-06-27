@@ -10,10 +10,12 @@ CREATE TABLE contas_pagar(
 
 SELECT * FROM contas_pagar;
 
+DROP TABLE IF EXISTS clientes;
 CREATE TABLE clientes(
 	id INT PRIMARY KEY IDENTITY(1,1), 
 	nome VARCHAR(100),
 	cpf VARCHAR(14),
-	data_vencimento DATETIME2,
+	data_nascimento DATETIME2,
 	rg VARCHAR(9) 
 );
+SELECT * FROM clientes;

@@ -51,7 +51,7 @@ namespace View
             contaPagar.Tipo = cbTipo.SelectedItem.ToString();
             contaPagar.DataVencimento = Convert.ToDateTime(dtpDataVencimento.Text);
 
-            ContasPagarRepositorio repositorio = new ContasPagarRepositorio();
+            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
             repositorio.Inserir(contaPagar);
             MessageBox.Show("Cadastrado");
         }
@@ -65,7 +65,7 @@ namespace View
             contaPagar.Tipo = cbTipo.SelectedItem.ToString();
             contaPagar.DataVencimento = Convert.ToDateTime(dtpDataVencimento.Text);
 
-            ContasPagarRepositorio repositorio = new ContasPagarRepositorio();
+            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
             repositorio.Alterar(contaPagar);
             MessageBox.Show("Alterado");
 
@@ -73,7 +73,7 @@ namespace View
 
         private void AtualizarTabela()
         {
-            ContasPagarRepositorio repositorio = new ContasPagarRepositorio();
+            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
             string busca = txtBusca.Text;
             List<ContaPagar> contasPagar = repositorio.ObterTodos(busca);
             dgvContasPagar.RowCount = 0;
@@ -99,7 +99,7 @@ namespace View
         private void btnApagar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(dgvContasPagar.CurrentRow.Cells[0].Value);
-            ContasPagarRepositorio repositorio = new ContasPagarRepositorio();
+            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
             repositorio.Apagar(id);
             AtualizarTabela();
             MessageBox.Show("Cadastro Apagado");
@@ -112,7 +112,7 @@ namespace View
 
         private void Editar()
         {
-            ContasPagarRepositorio repositorio = new ContasPagarRepositorio();
+            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
 
             int id = Convert.ToInt32(dgvContasPagar.CurrentRow.Cells[0].Value);
 

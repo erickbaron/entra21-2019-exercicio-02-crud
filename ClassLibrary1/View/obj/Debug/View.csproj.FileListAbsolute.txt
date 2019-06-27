@@ -17,10 +17,6 @@ C:\Users\Alunos\source\repos\ClassLibrary1\View\obj\Debug\View.pdb
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\View.exe.config
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\View.exe
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\View.pdb
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\ClassLibrary1.dll
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\ContaPagarRepository.dll
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\ClassLibrary1.pdb
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\ContaPagarRepository.pdb
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.csprojAssemblyReference.cache
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.FormContasPagar.resources
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.PaginaInicial.resources
@@ -30,3 +26,8 @@ T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.csproj.CopyComplete
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.exe
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.pdb
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.Clientes.resources
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Model.dll
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Repository.dll
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Model.pdb
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Repository.pdb

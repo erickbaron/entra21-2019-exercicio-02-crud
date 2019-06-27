@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Model
 {
-    class Cliente
+    public class Cliente
     {
+        public int Id;
+        public string Nome;
+        public string Cpf;
+        public DateTime DataNascimento;
+        public string Rg;
     }
 }

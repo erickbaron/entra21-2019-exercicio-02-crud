@@ -4,9 +4,9 @@ C:\Users\Alunos\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\Model.csprojA
 C:\Users\Alunos\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Alunos\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Alunos\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\obj\Debug\Model.csprojAssemblyReference.cache
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\obj\Debug\Model.csproj.CoreCompileInputs.cache
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\bin\Debug\Model.dll
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\bin\Debug\Model.pdb
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\obj\Debug\Model.dll
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\ClassLibrary1\obj\Debug\Model.pdb

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnContaPagar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -43,14 +43,15 @@
             this.btnContaPagar.UseVisualStyleBackColor = true;
             this.btnContaPagar.Click += new System.EventHandler(this.btnContaPagar_Click);
             // 
-            // button2
+            // btnClientes
             // 
-            this.button2.Location = new System.Drawing.Point(254, 56);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(235, 382);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnClientes.Location = new System.Drawing.Point(254, 56);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(235, 382);
+            this.btnClientes.TabIndex = 1;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // button3
             // 
@@ -67,7 +68,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnContaPagar);
             this.Name = "PaginaInicial";
             this.Text = "Form1";
@@ -78,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnContaPagar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button button3;
     }
 }
