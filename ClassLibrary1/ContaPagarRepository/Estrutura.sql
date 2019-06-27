@@ -1,4 +1,4 @@
-﻿DROP TABLE contas_pagar;
+﻿DROP TABLE IF EXISTS contas_pagar;
 CREATE TABLE contas_pagar(
 	id INT PRIMARY KEY IDENTITY(1,1), 
 	nome VARCHAR(100),
@@ -9,3 +9,11 @@ CREATE TABLE contas_pagar(
 );
 
 SELECT * FROM contas_pagar;
+
+CREATE TABLE clientes(
+	id INT PRIMARY KEY IDENTITY(1,1), 
+	nome VARCHAR(100),
+	cpf VARCHAR(14),
+	data_vencimento DATETIME2,
+	rg VARCHAR(9) 
+);

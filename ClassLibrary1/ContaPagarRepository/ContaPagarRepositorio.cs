@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class ContasPagarRepositorio
+    public class ContaPagarRepositorio
     {
         public string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;
 AttachDbFilename=T:\Documentos\BancoDados.mdf;

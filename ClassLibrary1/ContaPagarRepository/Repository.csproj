@@ -7,8 +7,8 @@
     <ProjectGuid>{ACDB6E4D-88C6-4427-808F-391DE5E07FDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContaPagarRepository</RootNamespace>
-    <AssemblyName>ContaPagarRepository</AssemblyName>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContasPagarRepositorio.cs" />
+    <Compile Include="ClienteRepositorio.cs" />
+    <Compile Include="ContaPagarRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
