@@ -43,6 +43,20 @@ namespace View
             LimparCampos();
         }
 
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dgvContasPagar.CurrentRow.Cells[0].Value);
+            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
+            repositorio.Apagar(id);
+            AtualizarTabela();
+            MessageBox.Show("Cadastro Apagado");
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Editar();
+        }
+
         private void Inserir()
         {
             ContaPagar contaPagar = new ContaPagar();
@@ -91,25 +105,6 @@ namespace View
             }
         }
 
-        private void FormContasPagar_Load(object sender, EventArgs e)
-        {
-            AtualizarTabela();
-        }
-
-        private void btnApagar_Click(object sender, EventArgs e)
-        {
-            int id = Convert.ToInt32(dgvContasPagar.CurrentRow.Cells[0].Value);
-            ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
-            repositorio.Apagar(id);
-            AtualizarTabela();
-            MessageBox.Show("Cadastro Apagado");
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            Editar();
-        }
-
         private void Editar()
         {
             ContaPagarRepositorio repositorio = new ContaPagarRepositorio();
@@ -125,6 +120,11 @@ namespace View
                 dtpDataVencimento.Text = contaPagar.DataVencimento.ToString();
                 lblId.Text = contaPagar.Id.ToString();
             }
+        }
+
+        private void FormContasPagar_Load(object sender, EventArgs e)
+        {
+            AtualizarTabela();
         }
 
         private void dgvContasPagar_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

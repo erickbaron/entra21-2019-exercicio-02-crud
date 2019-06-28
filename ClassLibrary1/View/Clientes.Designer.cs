@@ -111,6 +111,7 @@
             this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // lblNome
             // 
@@ -161,8 +162,9 @@
             // 
             this.txtBusca.Location = new System.Drawing.Point(122, 28);
             this.txtBusca.Name = "txtBusca";
-            this.txtBusca.Size = new System.Drawing.Size(393, 20);
+            this.txtBusca.Size = new System.Drawing.Size(411, 20);
             this.txtBusca.TabIndex = 7;
+            this.txtBusca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBusca_KeyDown);
             // 
             // lblId
             // 
@@ -187,8 +189,9 @@
             this.dgvClientes.Location = new System.Drawing.Point(122, 54);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
-            this.dgvClientes.Size = new System.Drawing.Size(393, 280);
+            this.dgvClientes.Size = new System.Drawing.Size(411, 280);
             this.dgvClientes.TabIndex = 14;
+            this.dgvClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellDoubleClick);
             // 
             // ColumnCodigo
             // 
@@ -208,14 +211,14 @@
             this.ColumnCPF.HeaderText = "CPF";
             this.ColumnCPF.Name = "ColumnCPF";
             this.ColumnCPF.ReadOnly = true;
-            this.ColumnCPF.Width = 70;
+            this.ColumnCPF.Width = 90;
             // 
             // ColumnRG
             // 
             this.ColumnRG.HeaderText = "RG";
             this.ColumnRG.Name = "ColumnRG";
             this.ColumnRG.ReadOnly = true;
-            this.ColumnRG.Width = 50;
+            this.ColumnRG.Width = 70;
             // 
             // ColumnDataNascimento
             // 

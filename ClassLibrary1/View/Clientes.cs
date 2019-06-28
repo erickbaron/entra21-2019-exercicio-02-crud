@@ -21,10 +21,17 @@ namespace View
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Inserir();
+            if (lblId.Text != "")
+            {
+                Alterar();
+            }
+            else
+            {
+                Inserir();
+            }
+            AtualizarTabela();
+            LimparCampos();
         }
-
-
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
@@ -33,6 +40,11 @@ namespace View
             repositorio.Apagar(id);
             AtualizarTabela();
             MessageBox.Show("Cadastro apagado");
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Editar();
         }
 
         private void Inserir()
@@ -50,7 +62,32 @@ namespace View
 
         private void Alterar()
         {
+            Cliente cliente = new Cliente();
+            cliente.Id = Convert.ToInt32(lblId.Text);
+            cliente.Nome = txtNome.Text;
+            cliente.Cpf =mtbCPF.Text;
+            cliente.Rg = mtbRG.Text;
+            cliente.DataNascimento = Convert.ToDateTime(dtpDataNascimento.Text);
 
+            ClienteRepositorio repositorio = new ClienteRepositorio();
+            repositorio.Alterar(cliente);
+            MessageBox.Show("Alterado");
+        }
+
+        private void Editar()
+        {
+            ClienteRepositorio repositorio = new ClienteRepositorio();
+            int id = Convert.ToInt32(dgvClientes.CurrentRow.Cells[0].Value);
+
+            Cliente cliente = repositorio.ObterPeloId(id);
+            if (cliente != null)
+            {
+                txtNome.Text = cliente.Nome;
+                mtbCPF.Text = cliente.Cpf;
+                mtbRG.Text = cliente.Rg;
+                dtpDataNascimento.Text = cliente.DataNascimento.ToString();
+                lblId.Text = cliente.Id.ToString();
+            }
         }
 
         private void AtualizarTabela()
@@ -75,6 +112,7 @@ namespace View
 
         private void LimparCampos()
         {
+            lblId.Text = "";
             txtNome.Clear();
             mtbCPF.Clear();
             mtbRG.Clear();
@@ -84,6 +122,14 @@ namespace View
         private void Clientes_Load(object sender, EventArgs e)
         {
             AtualizarTabela();
+        }
+
+        private void txtBusca_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                AtualizarTabela();
+            }    
         }
     }
 }

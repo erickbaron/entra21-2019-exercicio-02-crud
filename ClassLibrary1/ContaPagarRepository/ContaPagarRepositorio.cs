@@ -116,7 +116,7 @@ VALUES (@NOME, @VALOR, @TIPO, @DATA_VENCIMENTO)";
             comando.CommandText = @"SELECT * FROM contas_pagar
                                     WHERE nome LIKE @NOME";
             busca = "%" + busca + "%";
-            comando.Parameters.Add("@NOME", busca);
+            comando.Parameters.AddWithValue("@NOME", busca);
 
             DataTable tabela = new DataTable();
             tabela.Load(comando.ExecuteReader());
