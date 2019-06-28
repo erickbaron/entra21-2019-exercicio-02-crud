@@ -238,6 +238,7 @@
             this.txtBusca.Name = "txtBusca";
             this.txtBusca.Size = new System.Drawing.Size(345, 20);
             this.txtBusca.TabIndex = 14;
+            this.txtBusca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBusca_KeyDown);
             // 
             // ContaReceberForm
             // 

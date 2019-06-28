@@ -128,5 +128,13 @@ namespace View
         {
             AtualizarTabela();
         }
+
+        private void txtBusca_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                AtualizarTabela();
+            }
+        }
     }
 }
