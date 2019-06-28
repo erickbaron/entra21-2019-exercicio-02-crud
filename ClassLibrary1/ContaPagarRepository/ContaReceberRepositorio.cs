@@ -23,13 +23,13 @@ Integrated Security=True;Connect Timeout=30";
 
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = @"INSERT INTO contas_receber (nome, valor, valor_recebido, data_vencimento, recebido)
-VALUES(@NOME, @VALOR, @VALOR_RECEBIDO, @DATA_VENCIMENTO, @RECEBIDO)";
+            comando.CommandText = @"INSERT INTO contas_receber (nome, valor, valor_recebido, data_recebimento, recebido)
+VALUES(@NOME, @VALOR, @VALOR_RECEBIDO, @DATA_RECEBIMENTO, @RECEBIDO)";
 
             comando.Parameters.AddWithValue("@NOME", contaReceber.Nome);
             comando.Parameters.AddWithValue("@VALOR", contaReceber.Valor);
             comando.Parameters.AddWithValue("@VALOR_RECEBIDO", contaReceber.ValorRecebido);
-            comando.Parameters.AddWithValue("@DATA_VENCIMENTO", contaReceber.DataRecebimento);
+            comando.Parameters.AddWithValue("@DATA_RECEBIMENTO", contaReceber.DataRecebimento);
             comando.Parameters.AddWithValue("@RECEBIDO", contaReceber.Recebido);
 
             comando.ExecuteNonQuery();
@@ -51,6 +51,31 @@ WHERE id = @ID";
             comando.ExecuteNonQuery();
             conexao.Close();
             
+        }
+
+        public void Alterar(ContaReceber contaReceber)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = CadeiaConexao;
+            conexao.Open();
+
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = @"UPDATE contas_receber SET
+                                    nome = @NOME,
+                                    valor = @VALOR,
+                                    valor_recebido = @VALOR_RECEBIDO,
+                                    data_recebimento = @DATA_RECEBIMENTO
+                                    WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", contaReceber.Id);
+            comando.Parameters.AddWithValue("@NOME", contaReceber.Nome);
+            comando.Parameters.AddWithValue("@VALOR", contaReceber.Valor);
+            comando.Parameters.AddWithValue("@VALOR_RECEBIDO", contaReceber.ValorRecebido);
+            comando.Parameters.AddWithValue("@DATA_RECEBIMENTO", contaReceber.DataRecebimento);
+            comando.Parameters.AddWithValue("@RECEBIDO", contaReceber.Recebido);
+
+            comando.ExecuteNonQuery();
+            conexao.Close();
         }
 
         public ContaReceber ObterPeloId(int id)
@@ -80,7 +105,7 @@ WHERE id = @ID";
             contaReceber.Nome = linha["nome"].ToString();
             contaReceber.Valor = Convert.ToDecimal(linha["valor"]);
             contaReceber.ValorRecebido = Convert.ToDecimal(linha["valor_recebido"]);
-            contaReceber.DataRecebimento = Convert.ToDateTime(linha["data_vencimento"]);
+            contaReceber.DataRecebimento = Convert.ToDateTime(linha["data_recebimento"]);
             contaReceber.Recebido = Convert.ToBoolean(linha["recebido"]);
 
             return contaReceber;
@@ -112,7 +137,7 @@ WHERE id = @ID";
                 contaReceber.Nome = linha["nome"].ToString();
                 contaReceber.Valor = Convert.ToDecimal(linha["valor"]);
                 contaReceber.ValorRecebido = Convert.ToDecimal(linha["valor_recebido"]);
-                contaReceber.DataRecebimento = Convert.ToDateTime(linha["data_vencimento"]);
+                contaReceber.DataRecebimento = Convert.ToDateTime(linha["data_recebimento"]);
                 contaReceber.Recebido = Convert.ToBoolean(linha["recebido"]);
 
                 contasReceber.Add(contaReceber);

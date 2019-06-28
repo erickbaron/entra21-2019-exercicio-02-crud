@@ -26,6 +26,6 @@ CREATE TABLE contas_receber (
 	nome VARCHAR(100),
 	valor DECIMAL(6,2),
 	valor_recebido DECIMAL(6,2),
-	data_vencimento DATETIME2,
+	data_recebimento DATETIME2,
 	recebido BIT
 );

@@ -31,7 +31,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.mtbValor = new System.Windows.Forms.MaskedTextBox();
             this.mtbValorRecebido = new System.Windows.Forms.MaskedTextBox();
-            this.dtpDataVencimento = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataRecebimento = new System.Windows.Forms.DateTimePicker();
             this.ckbRecebido = new System.Windows.Forms.CheckBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
@@ -76,13 +76,13 @@
             this.mtbValorRecebido.Size = new System.Drawing.Size(100, 20);
             this.mtbValorRecebido.TabIndex = 2;
             // 
-            // dtpDataVencimento
+            // dtpDataRecebimento
             // 
-            this.dtpDataVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataVencimento.Location = new System.Drawing.Point(13, 140);
-            this.dtpDataVencimento.Name = "dtpDataVencimento";
-            this.dtpDataVencimento.Size = new System.Drawing.Size(100, 20);
-            this.dtpDataVencimento.TabIndex = 3;
+            this.dtpDataRecebimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataRecebimento.Location = new System.Drawing.Point(13, 140);
+            this.dtpDataRecebimento.Name = "dtpDataRecebimento";
+            this.dtpDataRecebimento.Size = new System.Drawing.Size(100, 20);
+            this.dtpDataRecebimento.TabIndex = 3;
             // 
             // ckbRecebido
             // 
@@ -256,7 +256,7 @@
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.ckbRecebido);
-            this.Controls.Add(this.dtpDataVencimento);
+            this.Controls.Add(this.dtpDataRecebimento);
             this.Controls.Add(this.mtbValorRecebido);
             this.Controls.Add(this.mtbValor);
             this.Controls.Add(this.txtNome);
@@ -274,7 +274,7 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.MaskedTextBox mtbValor;
         private System.Windows.Forms.MaskedTextBox mtbValorRecebido;
-        private System.Windows.Forms.DateTimePicker dtpDataVencimento;
+        private System.Windows.Forms.DateTimePicker dtpDataRecebimento;
         private System.Windows.Forms.CheckBox ckbRecebido;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblValor;
