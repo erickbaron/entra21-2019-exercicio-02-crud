@@ -52,6 +52,12 @@
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContaReceberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContaReceberForm.Designer.cs">
+      <DependentUpon>ContaReceberForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormContasPagar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContaReceberForm.resx">
+      <DependentUpon>ContaReceberForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContasPagar.resx">
       <DependentUpon>FormContasPagar.cs</DependentUpon>

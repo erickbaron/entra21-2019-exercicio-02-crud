@@ -31,3 +31,4 @@ T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Model
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Repository.dll
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Model.pdb
 T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\bin\Debug\Repository.pdb
+T:\Documentos\GitHub\entra21-exercicio02-crud\ClassLibrary1\View\obj\Debug\View.ContaReceberForm.resources

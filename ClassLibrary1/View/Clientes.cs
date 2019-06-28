@@ -131,5 +131,10 @@ namespace View
                 AtualizarTabela();
             }    
         }
+
+        private void dgvClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Editar();
+        }
     }
 }

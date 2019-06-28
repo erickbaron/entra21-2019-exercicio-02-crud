@@ -28,5 +28,11 @@ namespace View
             Clientes form = new Clientes();
             form.Visible = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ContaReceberForm form = new ContaReceberForm();
+            form.Visible = true;
+        }
     }
 }

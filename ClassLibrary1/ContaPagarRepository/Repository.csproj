@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ClienteRepositorio.cs" />
     <Compile Include="ContaPagarRepositorio.cs" />
+    <Compile Include="ContaReceberRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

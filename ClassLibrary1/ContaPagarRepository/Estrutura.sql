@@ -19,3 +19,13 @@ CREATE TABLE clientes(
 	rg VARCHAR(9) 
 );
 SELECT * FROM clientes;
+
+DROP TABLE contas_receber;
+CREATE TABLE contas_receber (
+	id INT PRIMARY KEY IDENTITY(1,1),
+	nome VARCHAR(100),
+	valor DECIMAL(6,2),
+	valor_recebido DECIMAL(6,2),
+	data_vencimento DATETIME2,
+	recebido BIT
+);
